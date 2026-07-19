@@ -1,0 +1,6 @@
+{
+  "requestedAction": "create_pr",
+  "source": "github",
+  "repo": "owner/repo",
+  "branch": "feature/codepm-parser"
+}

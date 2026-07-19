@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "codepm.config.v1",
+  "defaults": {
+    "baseRef": "main",
+    "auditLogPath": ".codepm/audit.jsonl"
+  },
+  "review": {
+    "maxChangedFiles": 12,
+    "additionalSensitivePaths": [
+      "infra/prod/**",
+      ".github/workflows/**"
+    ]
+  },
+  "github": {
+    "adapterMode": "fixture",
+    "prReadAdapterMode": "fixture",
+    "prReadTokenEnv": "GITHUB_TOKEN",
+    "prReadApiBaseUrl": "https://api.github.com",
+    "prReadApiVersion": "2022-11-28"
+  },
+  "safety": {
+    "secretScanning": true,
+    "highRiskHumanApproval": true
+  }
+}

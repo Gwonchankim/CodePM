@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "action": "merge_pr",
+  "repo": "octo/example",
+  "prNumber": 42,
+  "url": "https://github.com/octo/example/pull/42",
+  "result": "merged",
+  "headSha": "abc123passing",
+  "stateReadAt": "2026-05-25T00:31:00.000Z",
+  "mergeSha": "merge-sha-123"
+}

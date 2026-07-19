@@ -1,0 +1,34 @@
+{
+  "name": "codepm",
+  "version": "0.0.0",
+  "description": "Codex workflow guidance for the local CodePM PM gate.",
+  "author": {
+    "name": "CodePM"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "codex",
+    "claude",
+    "pm-gate",
+    "workflow"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "CodePM",
+    "shortDescription": "Review Claude plans, diffs, and PR readiness through CodePM.",
+    "longDescription": "Use CodePM as a local PM gate for Claude Code and Codex workflows. The plugin guidance keeps review and execution boundaries explicit: review through CodePM, execute only through guarded preflight.",
+    "developerName": "CodePM",
+    "category": "Productivity",
+    "capabilities": [
+      "Review",
+      "Workflow"
+    ],
+    "defaultPrompt": [
+      "Review this Claude proposal with CodePM.",
+      "Check this implementation diff with CodePM.",
+      "Explain the CodePM PM loop."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

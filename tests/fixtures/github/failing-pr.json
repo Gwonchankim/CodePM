@@ -1,0 +1,28 @@
+{
+  "repo": "octo/example",
+  "prNumber": 43,
+  "title": "Failing CI fixture",
+  "body": "Fixture with failing checks.",
+  "baseRef": "main",
+  "headRef": "feature/failing-ci",
+  "headSha": "abc123failing",
+  "changedFiles": ["src/review/pr-gate-reviewer.ts"],
+  "checks": [
+    {
+      "name": "test",
+      "status": "completed",
+      "conclusion": "failure",
+      "detailsUrl": "https://github.example/checks/2"
+    }
+  ],
+  "reviews": [],
+  "reviewThreads": [],
+  "unresolvedThreads": [],
+  "mergeability": {
+    "state": "blocked",
+    "isDraft": false,
+    "canMerge": false,
+    "reason": "Required check failed."
+  },
+  "readAt": "2026-05-25T00:00:00.000Z"
+}

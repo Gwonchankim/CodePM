@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "action": "create_pr",
+  "repo": "octo/example",
+  "prNumber": 77,
+  "url": "https://github.com/octo/example/pull/77",
+  "result": "created",
+  "headSha": "abc123passing",
+  "stateReadAt": "2026-05-25T00:31:00.000Z"
+}

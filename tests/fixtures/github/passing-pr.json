@@ -1,0 +1,37 @@
+{
+  "repo": "octo/example",
+  "prNumber": 42,
+  "title": "Add CodePM GitHub read model",
+  "body": "Defines the read-only PR state contract.",
+  "baseRef": "main",
+  "headRef": "feature/github-read-model",
+  "headSha": "abc123passing",
+  "changedFiles": [
+    "src/integrations/github/github-types.ts",
+    "src/integrations/github/github-port.ts"
+  ],
+  "checks": [
+    {
+      "name": "test",
+      "status": "completed",
+      "conclusion": "success",
+      "detailsUrl": "https://github.example/checks/1"
+    }
+  ],
+  "reviews": [
+    {
+      "reviewer": "alice",
+      "state": "approved",
+      "submittedAt": "2026-05-25T00:00:00.000Z"
+    }
+  ],
+  "reviewThreads": [],
+  "unresolvedThreads": [],
+  "mergeability": {
+    "state": "mergeable",
+    "isDraft": false,
+    "canMerge": true,
+    "reason": "No blockers reported by fixture state."
+  },
+  "readAt": "2026-05-25T00:00:00.000Z"
+}

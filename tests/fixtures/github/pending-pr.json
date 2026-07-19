@@ -1,0 +1,27 @@
+{
+  "repo": "octo/example",
+  "prNumber": 44,
+  "title": "Pending CI fixture",
+  "body": "Fixture with pending checks.",
+  "baseRef": "main",
+  "headRef": "feature/pending-ci",
+  "headSha": "abc123pending",
+  "changedFiles": ["src/review/pr-gate-reviewer.ts"],
+  "checks": [
+    {
+      "name": "test",
+      "status": "in_progress",
+      "detailsUrl": "https://github.example/checks/3"
+    }
+  ],
+  "reviews": [],
+  "reviewThreads": [],
+  "unresolvedThreads": [],
+  "mergeability": {
+    "state": "unknown",
+    "isDraft": false,
+    "canMerge": false,
+    "reason": "CI is still running."
+  },
+  "readAt": "2026-05-25T00:00:00.000Z"
+}

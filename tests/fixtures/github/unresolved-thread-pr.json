@@ -1,0 +1,50 @@
+{
+  "repo": "octo/example",
+  "prNumber": 45,
+  "title": "Unresolved review thread fixture",
+  "body": "Fixture with unresolved review feedback.",
+  "baseRef": "main",
+  "headRef": "feature/unresolved-thread",
+  "headSha": "abc123thread",
+  "changedFiles": ["src/review/pr-gate-reviewer.ts"],
+  "checks": [
+    {
+      "name": "test",
+      "status": "completed",
+      "conclusion": "success",
+      "detailsUrl": "https://github.example/checks/4"
+    }
+  ],
+  "reviews": [
+    {
+      "reviewer": "bob",
+      "state": "changes_requested",
+      "submittedAt": "2026-05-25T00:00:00.000Z"
+    }
+  ],
+  "reviewThreads": [
+    {
+      "id": "thread-1",
+      "path": "src/review/pr-gate-reviewer.ts",
+      "line": 24,
+      "isResolved": false,
+      "summary": "Please handle stale head SHA."
+    }
+  ],
+  "unresolvedThreads": [
+    {
+      "id": "thread-1",
+      "path": "src/review/pr-gate-reviewer.ts",
+      "line": 24,
+      "isResolved": false,
+      "summary": "Please handle stale head SHA."
+    }
+  ],
+  "mergeability": {
+    "state": "blocked",
+    "isDraft": false,
+    "canMerge": false,
+    "reason": "Unresolved review thread exists."
+  },
+  "readAt": "2026-05-25T00:00:00.000Z"
+}

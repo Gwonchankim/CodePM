@@ -1,0 +1,70 @@
+Claude Code session
+
+I will hand this to CodePM for PM review.
+
+````codepm-proposal
+# Claude Work Proposal
+
+## Goal
+
+Review Claude CLI transcript output.
+
+## Context
+
+CodePM needs to extract structured blocks from noisy Claude Code output.
+
+## Proposed Changes
+
+- Add a Claude output normalizer.
+- Add transcript fixtures and unit tests.
+
+## Files Expected To Change
+
+- `src/orchestration/claude-output-normalizer.ts`
+- `src/integrations/claude-cli/transcript-reader.ts`
+- `tests/unit/orchestration/claude-output-normalizer.test.ts`
+
+## Risk Assessment
+
+- Risk Level: medium
+- Risk Areas:
+  - local tooling
+  - parser behavior
+
+## Test Plan
+
+- Run Claude output normalizer unit tests.
+
+## Commands To Run
+
+```bash
+npm test -- --run tests/unit/orchestration/claude-output
+```
+
+## Requested Action
+
+plan_review
+
+## Rollback Plan
+
+Revert the normalizer files.
+
+## Open Questions
+
+- None.
+````
+
+The implementation completed and tests passed.
+
+```codepm-test-evidence
+npm test -- --run tests/unit/orchestration/claude-output
+Result: passed
+```
+
+Claude requests the next PM gate:
+
+```codepm-action-request
+requestedAction: implementation_review
+branch: feature/claude-output-normalizer
+expectedHeadSha: abc1234
+```

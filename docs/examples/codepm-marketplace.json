@@ -1,0 +1,20 @@
+{
+  "name": "codepm",
+  "interface": {
+    "displayName": "CodePM"
+  },
+  "plugins": [
+    {
+      "name": "codepm",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codepm"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

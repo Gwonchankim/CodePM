@@ -1,0 +1,58 @@
+Claude Code session
+
+```codepm-proposal
+# Claude Work Proposal
+
+## Goal
+
+Review ambiguous Claude action output.
+
+## Context
+
+CodePM must not infer which action Claude wants when multiple action blocks exist.
+
+## Proposed Changes
+
+- Add review-claude-output command handling.
+
+## Files Expected To Change
+
+- `src/cli/commands/review-claude-output.ts`
+- `tests/e2e/review-claude-output.test.ts`
+
+## Risk Assessment
+
+- Risk Level: medium
+- Risk Areas:
+  - local tooling
+
+## Test Plan
+
+- Run review-claude-output e2e tests.
+
+## Commands To Run
+
+npm test -- --run tests/e2e/review-claude-output
+
+## Requested Action
+
+plan_review
+
+## Rollback Plan
+
+Revert this command.
+
+## Open Questions
+
+- None.
+```
+
+```codepm-action-request
+requestedAction: implementation_review
+branch: feature/first
+```
+
+```codepm-action-request
+requestedAction: push_branch
+branch: feature/second
+```

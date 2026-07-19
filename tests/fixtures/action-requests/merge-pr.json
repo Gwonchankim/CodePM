@@ -1,0 +1,7 @@
+{
+  "requestedAction": "merge_pr",
+  "source": "github",
+  "repo": "owner/repo",
+  "prNumber": 123,
+  "expectedHeadSha": "0123456789abcdef0123456789abcdef01234567"
+}

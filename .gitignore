@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+.tmp-codepm-tests/
+.codepm/
+.env
+.env.*
+*.pem
+*.key
+*.log

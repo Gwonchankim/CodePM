@@ -1,0 +1,48 @@
+{
+  "name": "codepm",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Local PM gate and orchestration CLI for Claude Code and Codex workflows.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "codepm": "./dist/cli/index.js",
+    "codepm-mcp": "./dist/mcp/index.js"
+  },
+  "files": [
+    "dist/**",
+    "README.md",
+    "docs/**",
+    "plugins/codepm/**"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "dev": "tsx src/cli/index.ts",
+    "pack:dry-run": "npm pack --dry-run --json --cache .tmp-codepm-tests/npm-cache",
+    "pack:smoke": "node scripts/package-smoke.mjs",
+    "release:check": "npm run typecheck && npm run build && npm test && npm run pack:dry-run && npm run pack:smoke"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  }
+}
